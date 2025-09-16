@@ -133,6 +133,9 @@ El mismo caso para la creación de peliculas aleatoriamente.
 
 <img width="624" height="258" alt="image" src="https://github.com/WBOK-GM/COMPOSE_DNS/blob/main/Images/Screenshot%20From%202025-09-16%2007-32-10.png" />
 
+## Qué red es més práctica para proyectos distribuidos? 
+
+La red user-defined es la opción más práctica para proyectos distribuidos. Puesto  que a diferencia de la red por defecto, que asigna IPs dinámicas que cambian cada vez que se reinicia el contenedor, la red definida por el usuario utiliza un servicio de DNS interno, lo cual es muy practico, ahorrando el dolor de cabeza de cambiar la dirección o que haya errores de sevidor por reinciar. 
 
 
 
