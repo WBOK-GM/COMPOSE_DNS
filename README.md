@@ -84,15 +84,16 @@ NEO4J_URI=bolt://neo4j-walter:7687
 NEO4J_USER=neo4j
 NEO4J_PASSWORD=supersecurepassword
 ```
-Con esto ya queda con usando DNS, para evitar colocar la ip siempre que se reinicie. 
 
-Al hacer las pruebas para obtener las peliculas nos funciona con normalidad
+Al hacer las pruebas para obtener las peliculas no se puede conectar la base de datos
 
-<img width="624" height="258" alt="image" src="https://github.com/WBOK-GM/COMPOSE_DNS/blob/main/Images/Screenshot%20From%202025-09-16%2007-31-05.png" />
+<img width="624" height="258" alt="image" src="https://github.com/WBOK-GM/COMPOSE_DNS/blob/main/Images/Screenshot%20From%202025-09-16%2008-17-17.png" />
 
 El mismo caso para la creación peliculas.
 
-<img width="624" height="258" alt="image" src="https://github.com/WBOK-GM/COMPOSE_DNS/blob/main/Images/Screenshot%20From%202025-09-16%2007-32-10.png" />
+<img width="624" height="258" alt="image" src="https://github.com/WBOK-GM/COMPOSE_DNS/blob/main/Images/Screenshot%20From%202025-09-16%2008-18-17.png" />
+
+
 
 
 
