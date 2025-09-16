@@ -23,8 +23,9 @@ Este ejercicio consiste en desplegar dos servicios con **Docker Compose**:
 
 👉 En este caso, los contenedores pueden comunicarse usando el **nombre del servicio como DNS**.  
 
-contenedores Corriendo.
-<img width="624" height="258" alt="image" src="https://github.com/user-attachments/assets/d706baef-4d44-4f70-a39a-f7d0c3b5bf7d" />
+## Contenedores Corriendo.
+
+<img width="624" height="258" alt="image" src="https://github.com/WBOK-GM/COMPOSE_DNS/blob/main/Images/Screenshot%20From%202025-09-16%2007-16-02.png" />
 
 
 Evidencia del docker-compose.yml
@@ -78,11 +79,11 @@ Con esto ya queda con usando DNS, para evitar colocar la ip siempre que se reini
 
 Al hacer las pruebas para obtener las peliculas nos funciona con normalidad
 
-<img width="624" height="258" alt="image" src="https://github.com/user-attachments/assets/ee22503c-6611-4fc9-b02b-b4007a42d785" />
+<img width="624" height="258" alt="image" src="https://github.com/WBOK-GM/COMPOSE_DNS/blob/main/Images/Screenshot%20From%202025-09-16%2007-31-05.png" />
 
 El mismo caso para la creación peliculas.
 
-<img width="624" height="258" alt="image" src="https://github.com/user-attachments/assets/276feea8-3686-44a4-9902-e540f33b315d" />
+<img width="624" height="258" alt="image" src="https://github.com/WBOK-GM/COMPOSE_DNS/blob/main/Images/Screenshot%20From%202025-09-16%2007-32-10.png" />
 
 
 
