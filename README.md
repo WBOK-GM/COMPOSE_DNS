@@ -4,32 +4,39 @@
 Este ejercicio consiste en desplegar dos servicios con **Docker Compose**:
 - Una **API en Flask** con endpoints `GET` y `POST`.
 - Una **base de datos Neo4j**.
+
 ---
 
 ## Servicios
-1. **Flask API (`flask_api`)**  
-   - Expone en el puerto `5000`.  
-   - Endpoints:  
-     - `GET /peliculas?page=N`: devuelve los datos paginados (50 por página).  
-     - `GET /peliculas/all`: devuelve todos los registros.  
-     - `POST /peliculas`: crea una nueva película con datos aleatorios.  
+### 1. Flask API (`flask_api`)  
+- Expone en el puerto `5000`.  
+- Endpoints implementados:  
+  - `GET /peliculas?page=N` → devuelve los datos paginados (50 por página).  
+  - `GET /peliculas/all` → devuelve todos los registros.  
+  - `POST /peliculas` → crea una nueva película con datos aleatorios.  
 
-2. **Neo4j (`neo4j_db`)**  
-   - Imagen: `neo4j:5.22.0-community`  
-   - Expone puertos `7474` (HTTP) y `7687` (Bolt).  
+### 2. Neo4j (`neo4j-walter`)  
+- Imagen usada: `neo4j:5.22.0-community`.  
+- Expone los puertos:  
+  - `7474` → HTTP (interfaz web).  
+  - `7687` → Bolt (para clientes externos).  
+
 ---
 
-## Paso 2 – Conexión usando red *bridge* por defecto
+## 🔹 Paso 2 – Conexión usando red *bridge* por defecto
 
-👉 En este caso, los contenedores pueden comunicarse usando el **nombre del servicio como DNS**.  
+👉 En este escenario, los contenedores pueden comunicarse usando el **nombre del servicio como DNS** en lugar de la IP.  
 
-## Contenedores Corriendo.
+### 🐳 Contenedores corriendo
+<p align="center">
+  <img width="624" height="258" alt="Contenedores corriendo" src="https://github.com/WBOK-GM/COMPOSE_DNS/blob/main/Images/Screenshot%20From%202025-09-16%2007-16-02.png" />
+</p>
 
-<img width="624" height="258" alt="image" src="https://github.com/WBOK-GM/COMPOSE_DNS/blob/main/Images/Screenshot%20From%202025-09-16%2007-16-02.png" />
+---
 
+## 📄 Evidencia del `docker-compose.yml`
 
-Evidencia del docker-compose.yml
-
+```yaml
 services:
   neo4j-walter:
     image: neo4j:5.22.0-community
@@ -68,6 +75,7 @@ services:
 volumes:
   neo4j_data:
     driver: local
+```
 
 El .env se modifica usando el nombre "DNS" del neo4j 
 
