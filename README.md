@@ -25,9 +25,9 @@ Este ejercicio consiste en desplegar dos servicios con **Docker Compose**:
 
 ## 🔹 Paso 2 – Conexión usando red *bridge* por defecto
 
-👉 En este escenario, los contenedores pueden comunicarse usando el **nombre del servicio como DNS** en lugar de la IP.  
+Los contenedores pueden comunicarse usando el **nombre del servicio como DNS** en lugar de la IP.  
 
-### 🐳 Contenedores corriendo
+### Contenedores corriendo
 <p align="center">
   <img width="624" height="258" alt="Contenedores corriendo" src="https://github.com/WBOK-GM/COMPOSE_DNS/blob/main/Images/Screenshot%20From%202025-09-16%2007-16-02.png" />
 </p>
@@ -79,10 +79,10 @@ volumes:
 
 El .env se modifica usando el nombre "DNS" del neo4j 
 
-NEO4J_URI=bolt://neo4j-walter:7687
+```NEO4J_URI=bolt://neo4j-walter:7687
 NEO4J_USER=neo4j
 NEO4J_PASSWORD=supersecurepassword
-
+```
 Con esto ya queda con usando DNS, para evitar colocar la ip siempre que se reinicie. 
 
 Al hacer las pruebas para obtener las peliculas nos funciona con normalidad
