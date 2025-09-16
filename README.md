@@ -101,6 +101,37 @@ El mismo caso para la creación peliculas.
 
 <img width="624" height="258" alt="image" src="https://github.com/WBOK-GM/COMPOSE_DNS/blob/main/Images/Screenshot%20From%202025-09-16%2008-18-17.png" />
 
+## 🔹 Paso 3 – Conexión usando red user-defined
+
+Cambios realizados en el docker compose
+
+```
+networks:
+  app_network:
+    driver: bridge
+
+services:
+  neo4j-walter:
+    ...
+    networks:
+      - app_network
+
+  flask_api:
+    ...
+    networks:
+      - app_network
+
+```
+
+## Evidencia de conexión exitosa
+
+Obtener todas las peluculas
+
+<img width="624" height="258" alt="image" src="https://github.com/WBOK-GM/COMPOSE_DNS/blob/main/Images/Screenshot%20From%202025-09-16%2007-31-05.png" />
+
+El mismo caso para la creación de peliculas aleatoriamente. 
+
+<img width="624" height="258" alt="image" src="https://github.com/WBOK-GM/COMPOSE_DNS/blob/main/Images/Screenshot%20From%202025-09-16%2007-32-10.png" />
 
 
 
